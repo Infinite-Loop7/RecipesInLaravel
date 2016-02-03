@@ -1,5 +1,5 @@
 <?php
-      $dbhost = 'localhost:3306';
+            $dbhost = 'localhost:3306';
             $dbuser = 'root';
             $dbpass = '';
             $dbname = 'cookit';
@@ -27,11 +27,20 @@
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             }
 
+            
             $myInputs = $_POST["myInputs"];
-			foreach ($myInputs as $eachInput) {
-            $ing_id =$eachInput;
-            $sql2= "INSERT INTO measurement ". "(rec_id, ing_id) " . "VALUES('$last_id', '$ing_id')";
+            $myInputs2 =$_POST["myInputs2"];
+            $myInputs3 =$_POST["myInputs3"];
+            
+            $max= sizeof($myInputs);
+for ($i=0; $i<$max; $i++){
+           $ing_id =$myInputs[$i];
+           $ing_id2 =$myInputs2[$i];
+           $ing_id3 =$myInputs3[$i];
+            $sql2= "INSERT INTO measurement ". "(rec_id, ing_id, ing_measurement, ing_type) " . "VALUES('$last_id', '$ing_id', '$ing_id2', '$ing_id3')";
             mysqli_query($conn,$sql2);
-        	}
+   
+} 
+
             mysqli_close($conn);
      ?>

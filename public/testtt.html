@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <html> 
+<head>   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   </head>
 <body>
 <script src="addInput.js" language="Javascript" type="text/javascript"></script>
 <style>
@@ -9,6 +17,20 @@
 <form target="hiddenFrame" method = "post" action = "testtt.php">
                   <table width = "400" border = "0" cellspacing = "1" 
                      cellpadding = "2">
+                  <tr>
+                        <td width = "100"> </td>
+                        <td> </td>
+                     </tr>                  
+                     <tr>
+                          <td>
+                           <input name = "add" type = "submit" id = "add" 
+                              value = "Add Recipe">
+                        </td>
+                  
+                        <td>
+                            <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+                        </td>
+                     </tr>
                   
                      <tr>
                         <td width = "100">Recipe Name</td>
@@ -21,30 +43,17 @@
                         <td><input name = "rec_instructions" type = "text" 
                            id = "rec_instructions"></td>
                      </tr>
-					
+                              					
 					<tr>
-						<td>
-     						<div id="dynamicInput">
-          					Ingredient 1<br><input type="text" name="myInputs[]">
+					  	<div id="dynamicInput">
+          					<td>Ingredient 1<br></td><td><input type="text" placeholder="Name" name="myInputs[]"></td>
+                    <td><input type="text" placeholder="Measurement" name="myInputs2[]"></td>
+                    <td><input type="text" placeholder="cups; ts; tbs"name="myInputs3[]"></td>
      					</div>
-     					</td>
-					</tr>
+     	  	</tr>
+        
 
-                     <tr>
-                        <td width = "100"> </td>
-                        <td> </td>
-                     </tr>                  
-                     <tr>
-                        <td>
-                        	  <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
-                       	</td>
-                        <td width = "100"> </td>
-                        <td>
-                           <input name = "add" type = "submit" id = "add" 
-                              value = "Add Recipe">
-                        </td>
-                     </tr>
-                  
+                     
                   </table>
                </form>
 </body>
