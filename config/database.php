@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mysql_local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,16 +52,27 @@ return [
             'prefix'   => '',
         ],
 
-        'mysql' => [
+        'mysql_remote' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', 'joaquingonz.com'),
+            'database'  => env('DB_DATABASE', 'RecipesProject'),
+            'username'  => env('DB_USERNAME', 'InifiniteLoop7'),
+            'password'  => env('DB_PASSWORD', 'bu#;@MVC*^}4'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
+        ],
+
+        'mysql_local' => [
+          'driver'    => 'mysql',
+          'host'      => 'localhost:8889',
+          'database'  => 'Recipes',
+          'username'  => 'test',
+          'password'  => 'test',
+          'charset'   => 'utf8',
+          'collation' => 'utf8_unicode_ci',
+          'prefix'    => '',
         ],
 
         'pgsql' => [
