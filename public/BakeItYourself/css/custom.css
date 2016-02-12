@@ -1,12 +1,32 @@
+header {
+    color: #fff;
+    background-image: url('../img/cupcakes-1081963_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+}
+
+
+
+.jumbotron{
+    background-color: rgb(82, 86, 88)!important;
+}
+
 .fixed-panel{
-	max-height:300px;
-    overflow-y:auto; 
+    max-height:300px;
+    overflow-y:auto;
 }
 
-.top-buffer { 
-	margin-top:40px;
+.top-buffer {
+    margin-top:40px;
 }
 
-.row-buffer { 
-	margin-top:10px;
+.row-buffer {
+    margin-top:10px;
 }
+
