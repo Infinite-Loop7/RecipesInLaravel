@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    
+                    <title>Bake It Yourself</title>
+                    
+                    <!-- Bootstrap -->
+                    <link href="css/bootstrap.min.css" rel="stylesheet">
+                        <link rel="stylesheet" type="text/css" href="css/custom.css">
+                            
+                            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                            <!--[if lt IE 9]>
+                             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                             <![endif]-->
+                            
+    </head>
+    
+    <body>
+        <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand page-scroll" href="index2.html">Bake It Yourself</a>
+                </div>
+            </div>
+        </nav>
+        
+        <header>
+            <div class="header-content">
+                <div class="jumbotron">
+                    <h2 class= "text-center"> Add a New Recipe!</h2>
+                    <hr>
+                    <form target="saved.html" method = "post" action = "save.php" class="form-horizontal">
+                            <div class="form-group">
+                            <label for="inputRecipeName" class="control-label col-xs-2">Recipe Name</label>
+                            <div class="col-xs-5">
+                                <input name = "rec_name" type = "text" id = "rec_name" type="name" class="form-control"  placeholder="Recipe Name" required="required">
+                                    </div>
+                        </div>
+                        
+                        <div class= "container">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="inputRecipeName">Dry Ingredients</label>
+                                    <div class = "panel-body fixed-panel">
+                                        <div>All-Purpose Flour</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="1"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="2"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="3"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Cake Flour</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="4"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="5"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="6"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Granulated Sugar</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="7"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="8"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="9"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Light Brown Sugar</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="10"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="11"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="12"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Powdered Sugar</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="13"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="14"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="15"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>                                        
+                                        <div>Baking Powder</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="16"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="17"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="18"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Baking Soda</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="19"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="20"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="21"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Table Salt</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="22"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="23"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="24"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Unsweetened Cocoa Powder</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="25"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="26"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="27"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Cornstarch</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="28"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="29"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="30"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Cornmeal</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="31"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="32"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="33"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-4">
+                                    <label for="inputRecipeName">Wet Ingredients</label>
+                                    <div class="panel-body fixed-panel " >                                        
+                                        <div>Unsalted Butter</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="34"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="35"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="36"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Whole Milk</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="37"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="38"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="39"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Eggs</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="40"/>Egg</label>
+                                            <td><input  type="text" placeholder="Whole" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Vegetable Oil</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="41"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="42"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="43"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Corn Syrup</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="44"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="45"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="46"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Honey</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="47"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="48"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="49"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-4 ">
+                                    <label for="inputRecipeName">Other Ingredients</label>
+                                    <div class="panel-body fixed-panel " >                                        
+                                        <div>Vanilla Extract</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="50"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="51"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="52"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Almond Extract</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="53"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="54"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="55"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Chocolate Chips</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="56"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="57"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="58"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Ground Cinnamon</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="59"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="60"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="61"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Unsweetened Chocolate</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="62"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="63"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="64"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Old-fashioned Rolled Oats</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="65"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="66"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="67"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Walnuts</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="68"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="69"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="70"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Almonds</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="71"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="72"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="73"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Pecans</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="74"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="75"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="76"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Shredded Coconut</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="77"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="78"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="79"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Raisins</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="80"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="81"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="82"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Food Coloring</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="83"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="84"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="85"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>
+                                        <div>Sprinkles</div><div>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="86"/>Cups</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="87"/>Tbls</label>
+                                            <label class="checkbox-inline"><input type="checkbox" name="check_list[]" value="88"/>Tsp</label>
+                                            <td><input  type="text" placeholder="Measurement" name="measure[]" class="form-control" ></td>
+                                        </div>                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group top-buffer">
+                            <label for="inputRecipeName" class="control-label col-xs-2">Directions</label>
+                            <div class="col-xs-8">
+                                <textarea name = "rec_instructions" class="form-control"></textarea>
+                            </div>
+                            
+                        </div>
+                    
+                    
+                    <div class = "container ">
+                        <div class = "row top-buffer">
+                            <div class="col-md-10"></div>
+                            <div class= "col-md-2">
+                                 <input name = "add" type = "submit" id = "add" value = "Add Recipe" class="btn btn-primary btn-xl">
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        
+        
+    </body>
+</html>
