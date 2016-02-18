@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql_local'),
+    'default' => env('DB_CONNECTION', 'mysql_remote'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,10 +54,10 @@ return [
 
         'mysql_remote' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'joaquingonz.com'),
-            'database'  => env('DB_DATABASE', 'RecipesProject'),
-            'username'  => env('DB_USERNAME', 'InifiniteLoop7'),
-            'password'  => env('DB_PASSWORD', 'bu#;@MVC*^}4'),
+            'host'      => 'localhost',
+            'database'  => 'cookit',
+            'username'  => 'InfiniteLoop7',
+            'password'  => 'bu#;@MVC*^}4',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
