@@ -72,7 +72,7 @@
         <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand page-scroll" href="#">Bake It Yourself</a>
+                    <div class="navbar-header"><a class="navbar-brand page-scroll" href="index.html">Bake It Yourself</a>
                 </div>
             </div>
         </nav>
@@ -87,7 +87,7 @@
                     <div class = "container ">
                         <div class = "row top-buffer" align="center">
                             <div class="col-md-5" >
-                                <a href="search-recipe.html" class="btn btn-primary btn-xl">Search For Recipes</a>
+                                <a href="search-recipe2.html" class="btn btn-primary btn-xl">Search For Recipes</a>
                             </div>
                             <div class= "col-md-6">
                                 <a href="add-recipe2.html" class="btn btn-primary btn-xl">Add a new Recipe</a>
