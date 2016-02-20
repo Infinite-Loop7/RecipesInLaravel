@@ -4,7 +4,7 @@
             $dbpass = 'bu#;@MVC*^}4';
             $conn = mysql_connect($dbhost, $dbuser, $dbpass);
    $myInputs = $_POST["check_list"]; //inputed list
-   mysql_select_db('RecipesProject');
+   mysql_select_db('cookit');
    
    if(! $conn ) {
       die('Could not connect: ' . mysql_error());
