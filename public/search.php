@@ -29,7 +29,7 @@ $recid; //matched recipe id;
 $s=0;
 $matched=0;
 $same="none";
-
+if(sizeof($myInputs)>0){
 for($i=0; $i<$size; $i++){
   $r_id =  mysql_result($retval, $i,0);
   $ret =  mysql_result($retval, $i,1);
@@ -43,6 +43,7 @@ for($i=0; $i<$size; $i++){
     $matched =1;
     } 
   }
+}
 ?>
 
 
