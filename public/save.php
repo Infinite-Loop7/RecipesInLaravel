@@ -2,7 +2,7 @@
             $dbhost = 'localhost';
             $dbuser = 'InfiniteLoop7';
             $dbpass = 'bu#;@MVC*^}4';
-            $dbname = 'RecipesProject';
+            $dbname = 'cookit';
             $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
             
             if(! $conn ) {
