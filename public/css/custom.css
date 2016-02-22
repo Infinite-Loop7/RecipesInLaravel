@@ -1,20 +1,39 @@
-header {
-    color: #fff;
+body{
     background-image: url('../img/cupcakes-1081963_1920.jpg');
     background-position: center;
+    background-repeat:no-repeat;
     background-size: cover;
-}
-
-header .header-content {
+    overflow:hidden;
     position: relative;
-    width: 100%;
-    padding: 100px 15px;
 }
 
 
+.main-content-container {
+    color: white;
+  padding: 70px 90px 120px 90px;
 
-.jumbotron{
-    background-color: rgb(82, 86, 88)!important;
+}
+
+.glass {
+    z-index: 99;
+
+    background-image: url('../img/cupcakes-1081963_1920.jpg');
+    -webkit-filter: url('#blur');
+    filter: url('#blur');
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    background-size: cover;
+    opacity: 0.4
+}
+    
+
+.content{
+    color : white;
+    z-index: 100;
+    padding: 20px;
+    background: rgba(34,34,34,0.75);
+    
+ 
 }
 
 .fixed-panel{
@@ -28,5 +47,10 @@ header .header-content {
 
 .row-buffer {
     margin-top:10px;
+}
+
+.btn{
+    background-color: rgb(141, 44, 61)!important;
+    border: none;
 }
 
