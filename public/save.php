@@ -79,7 +79,8 @@
         
         <header>
             <div class="main-content-container">
-                <div class="">
+                <div class= "glass"></div>
+                <div class="content">
                     <h1 class= "text-center">B.I.Y. </h1>
                     <hr>
                     <p class="lead text-center ">Thank you for adding a new recipe!</p>
