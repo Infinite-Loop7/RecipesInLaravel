@@ -78,7 +78,7 @@
         </nav>
         
         <header>
-            <div class="header-content">
+            <div class="main-content-container">
                 <div class="">
                     <h1 class= "text-center">B.I.Y. </h1>
                     <hr>

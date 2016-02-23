@@ -80,8 +80,9 @@ for($i=0; $i<$size; $i++){
         </nav>
         
         <header>
-            <div class="header-content">
-                <div class="">
+            <div class="main-content-container">
+                <div class="glass"></div>
+                <div class="content">
                     <h1 class= "text-center">B.I.Y. </h1>
                     <hr>
                     <p class="lead text-center ">Thank you for searching for a recipe!</p>
