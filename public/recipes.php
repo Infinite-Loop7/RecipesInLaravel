@@ -1,9 +1,8 @@
 <?php
-  $dbhost = 'localhost';
-            $dbuser = 'InfiniteLoop7';
-            $dbpass = 'bu#;@MVC*^}4';
-            
-   $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+          $dbhost = 'localhost';
+          $dbuser = 'InfiniteLoop7';
+          $dbpass = 'bu#;@MVC*^}4';
+          $conn = mysql_connect($dbhost, $dbuser, $dbpass);
    mysql_select_db('cookit');
    
    if(! $conn ) {
