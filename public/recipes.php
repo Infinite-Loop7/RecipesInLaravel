@@ -1,31 +1,3 @@
-<?php
-          $dbhost = 'localhost';
-          $dbuser = 'InfiniteLoop7';
-          $dbpass = 'bu#;@MVC*^}4';
-          $conn = mysql_connect($dbhost, $dbuser, $dbpass);
-   mysql_select_db('cookit');
-   
-   if(! $conn ) {
-      die('Could not connect: ' . mysql_error());
-   }
-   $sql ='SELECT recipe.rec_id FROM recipe';
-   $recipe_ids = mysql_query($sql, $conn);
-while($row = mysql_fetch_array($recipe_ids, MYSQL_ASSOC)) {
-    $data[] = $row;
-     }
-     $size = mysql_num_rows($recipe_ids);
-     var_dump($size);
-     for($j=0;$j<$size;$j++){
-  $recid=mysql_result($recipe_ids, $j,0);
-   $sql2 ="SELECT recipe.rec_name, ingredient.ing_name, measurement.ing_measurement, ingredient.ing_measureType, recipe.rec_instructions 
-FROM recipe, ingredient, measurement
-WHERE recipe.rec_id = ". $recid ." AND recipe.rec_id=measurement.rec_id AND measurement.ing_id=ingredient.ing_id";
-$retval2 = mysql_query( $sql2, $conn );
-$rec2 = mysql_query($sql2, $conn);
-   $size2 = mysql_num_rows($rec2);
-?>
-
-
      <html lang="en">
     
     <head>
@@ -67,6 +39,31 @@ $rec2 = mysql_query($sql2, $conn);
                     <p class="lead text-center ">Thank you for searching for a recipe!</p>
                     <div align="center">
                     <?php
+                              $dbhost = 'localhost';
+          $dbuser = 'InfiniteLoop7';
+          $dbpass = 'bu#;@MVC*^}4';
+          $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+   mysql_select_db('cookit');
+   
+   if(! $conn ) {
+      die('Could not connect: ' . mysql_error());
+   }
+   $sql ='SELECT recipe.rec_id FROM recipe';
+   $recipe_ids = mysql_query($sql, $conn);
+while($row = mysql_fetch_array($recipe_ids, MYSQL_ASSOC)) {
+    $data[] = $row;
+     }
+     $size = mysql_num_rows($recipe_ids);
+     var_dump($size);
+     for($j=0;$j<$size;$j++){
+  $recid=mysql_result($recipe_ids, $j,0);
+   $sql2 ="SELECT recipe.rec_name, ingredient.ing_name, measurement.ing_measurement, ingredient.ing_measureType, recipe.rec_instructions 
+FROM recipe, ingredient, measurement
+WHERE recipe.rec_id = ". $recid ." AND recipe.rec_id=measurement.rec_id AND measurement.ing_id=ingredient.ing_id";
+$retval2 = mysql_query( $sql2, $conn );
+$rec2 = mysql_query($sql2, $conn);
+   $size2 = mysql_num_rows($rec2);
+
 
    echo "<br>"; 
   echo mysql_result($retval2,0,0);
