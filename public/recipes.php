@@ -54,7 +54,6 @@ while($row = mysql_fetch_array($recipe_ids, MYSQL_ASSOC)) {
     $data[] = $row;
      }
      $size = mysql_num_rows($recipe_ids);
-     var_dump($size);
      for($j=0;$j<$size;$j++){
   $recid=mysql_result($recipe_ids, $j,0);
    $sql2 ="SELECT recipe.rec_name, ingredient.ing_name, measurement.ing_measurement, ingredient.ing_measureType, recipe.rec_instructions 
