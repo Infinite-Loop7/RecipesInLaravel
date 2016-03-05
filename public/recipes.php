@@ -23,16 +23,18 @@
     </head>
     
     <body>
-        <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
+        <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand page-scroll" href="index.html">Bake It Yourself</a>
+                <a class= "page-scroll" href="index.html" >
+                    <img src="../img/cupcakelogoT1crop.png" style="width:200px;height:60px" />
+                </a>
                 </div>
             </div>
         </nav>
         
         <header>
             <div class="main-content-container">
-                <div class="glass"></div>
+                <div class="glass-all"></div>
                 <div class="content">
                     <h1 class= "text-center">B.I.Y. </h1>
                     <hr>
