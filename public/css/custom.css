@@ -1,40 +1,73 @@
+
 body{
-    background-image: url('../img/cupcakes-1081963_1920.jpg');
+    /*background-image: url('../img/cupcakes-1081963_1920.jpg');
     background-position: center;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     
-    position: relative;
+    background-image: url('../img/cupcakes-1081963_1920.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 
 .main-content-container {
     color: white;
-  padding: 70px 90px 120px 90px;
+    padding-top:5%
 
 }
 
-.glass {
-    z-index: 99;
-
+.glass-home {
+    z-index: -1;
     background-image: url('../img/cupcakes-1081963_1920.jpg');
-    -webkit-filter: url('#blur');
-    filter: url('#blur');
+    position: absolute; 
+    background-color: white;
     -webkit-filter: blur(5px);
-    filter: blur(5px);
-    background-size: cover;
-    opacity: 0.4
+    filter:blur(5px);
+    height: 30%;
+    width: 100%;
 }
-    
+.glass-search {
+    z-index: -1;
+    background-image: url('../img/cupcakes-1081963_1920.jpg');
+    position: absolute; 
+    background-color: white;
+    -webkit-filter: blur(5px);
+    filter:blur(5px);
+    height: 70%;
+    width: 100%;
+}
 
+.glass-all {
+    z-index: -1;
+    background-image: url('../img/cupcakes-1081963_1920.jpg');
+    position: absolute; 
+    background-color: white;
+    -webkit-filter: blur(5px);
+    filter:blur(5px);
+    height: 100%;
+    width: 100%;
+} 
+    
 .content{
-    color : white;
+    color : black;
     z-index: 100;
     padding: 20px;
-    background: rgba(34,34,34,0.75);
-    
- 
+    /*background: rgba(34,34,34,0.75);*/
+    background-color: rgba(245, 245, 245, 0.6);  
 }
+
+.img-circle{
+    background-color:rgba(34,34,34,0.75);
+}
+
+
 
 .fixed-panel{
     max-height:300px;

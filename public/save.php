@@ -65,21 +65,23 @@
                                  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
                                  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
                                  <![endif]-->
-                                
+           <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>                     
     </head>
     
     <body>
-        <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
+        <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <div class="navbar-header"><a class="navbar-brand page-scroll" href="index.html">Bake It Yourself</a>
+                   <a class= "page-scroll" href="index.html" >
+                    <img src="../img/cupcakelogoT1crop.png" style="width:200px;height:60px" />
+                    </a>
                 </div>
             </div>
         </nav>
         
         <header>
             <div class="main-content-container">
-                <div class= "glass"></div>
+                <div class= "glass-home"></div>
                 <div class="content">
                     <h1 class= "text-center">B.I.Y. </h1>
                     <hr>
