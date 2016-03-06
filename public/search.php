@@ -113,7 +113,12 @@ for($i=0; $i<$size; $i++){
                                 echo "<br>";
                                 echo "Instructions:";
                                 echo "<br>";
-                                echo mysql_result($retval2,0,4);
+                                $lines = preg_split("/\d+\./", mysql_result($retval2,0,4));
+                                foreach($lines as $line)
+                                {
+                                    echo $line;
+                                    echo "<br>";
+                                }
                                 echo "<br>";
                                 
                                 echo"-------------------------------------";
